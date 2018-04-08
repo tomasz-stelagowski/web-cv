@@ -1,0 +1,31 @@
+<div id="headerwrap">
+  <div class="container">
+    <div class="row centered">
+      <div class="col-lg-12">
+        <h1>Tomasz Stelągowski</h1>
+        <h3>Full-stack developer | tomasz.stelagowski@gmail.com</h3>
+      </div><!--/.col-lg-12 -->
+    </div><!--/.row -->
+  </div><!--/.container -->
+</div>
+<cv-section [sectionname]="'ABOUT'" class="theme-dark">
+  <cv-section-item>
+    <p desc>I'm web designer & front-end developer with 7 years of professional experience. I'm interested in all kinds of visual communication, but my major focus is on designing web, mobile & tablet interfaces. I also have skills in other fields like branding, icon design or web development.</p>
+    <p info><a href="#"><i class="fa fa-file"></i></a> <sm>DOWNLOAD PDF</sm></p>
+  </cv-section-item>
+</cv-section>
+<cv-section [sectionname]="'EMPLOYMENT'">
+  <ng-container *ngFor="let emp of employment">
+    <cv-section-item>
+      <p desc> 
+        <strong>{{ emp["companyName"] }}</strong> <br />
+        <i>Technologies: </i> {{ emp["techs"].join(", ") }} <br />
+          <span class="li" *ngFor="let point of (emp['desc'])"> {{ point }} </span><br />
+      </p>
+      <p info>
+        {{emp["start"] }} - {{ emp["end"]}}
+      </p>
+       
+    </cv-section-item>
+  </ng-container>
+</cv-section>

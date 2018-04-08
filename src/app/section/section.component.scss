@@ -1,0 +1,30 @@
+#cvsection {
+  ::ng-deep{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+#cvsection {
+  ::ng-deep i {
+    padding-right: 8px;
+    vertical-align: middle;
+  }
+}
+
+:host-context(.theme-dark) hr {
+  display: none;
+}
+
+:host-context(.theme-dark) ::ng-deep #cvsection {
+	background: #2c3e50;
+	color: white;
+}
+
+:host-context(.theme-dark) ::ng-deep #cvsection h5, p {
+	color: white;
+}
+
+:host-context(.theme-dark) ::ng-deep #cvsection i {
+	color: white;
+}

@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import { HomecvComponent } from './homecv/homecv.component';
+
 const routes: Routes = [
   {
+    path:'home',
+    component: HomecvComponent
+  },{
     path: '',
-    children: []
+    redirectTo: '/home',
+    pathMatch: 'full'
   }
 ];
 
