@@ -4,6 +4,9 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
+    "build:deploy": "ng build --prod --base-href \"https://tomasz-stelagowski.github.io\"",
+    "deploy:github": "ngh --repo=\"https://github.com/tomasz-stelagowski/tomasz-stelagowski.github.io.git\" --branch=\"master\"",
+    "deploy": "npm run build:deploy && npm run deploy:github",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
