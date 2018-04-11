@@ -1,0 +1,25 @@
+.nav-item {
+  flex: 0 1 91px;
+}
+
+.nav-link {
+  text-align: center;
+}
+
+.amp {
+  position: relative;
+  line-height: 110%;
+}
+.namp {
+  position: relative;
+  line-height: 110%;
+}
+
+.amp::before {
+  content: "&";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: brightness(60%);
+  margin-top: 1px;
+}

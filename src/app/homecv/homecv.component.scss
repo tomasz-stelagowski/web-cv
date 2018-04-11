@@ -1,10 +1,10 @@
 /* Header Wrap */
 #headerwrap {
-	background: url(/assets/header-bg.jpg) no-repeat center top;
+	background: url(/assets/about.jpg) no-repeat center top;
 	padding-top:140px;
 	text-align:center;
-	background-attachment: relative;
-	background-position: center center;
+  background-attachment: relative;
+	background-position: center top;
 	min-height: 500px;
 	width: 100%;
 
@@ -17,16 +17,15 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
 }
 
 #headerwrap h1 {
 	font-size: 80px;
-	color: white;
 }
 
 #headerwrap h3 {
-	font-size: 20px;
-	color: white;
+  font-size: 20px;
 }
 
 a {
@@ -34,3 +33,6 @@ a {
   text-decoration: none;
 }
 
+.border-current {
+  border-color: orange !important;
+}

@@ -6,7 +6,7 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "docs",
       "assets": [
         "assets",
         "favicon.ico"
@@ -19,6 +19,8 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "cv",
       "styles": [
+        "../node_modules/flag-icon-css/sass/flag-icon.scss",
+        "../node_modules/lato-font/scss/lato-font.scss",
         "../node_modules/font-awesome/scss/font-awesome.scss",
         "../node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",
         "../node_modules/angular-bootstrap-md/scss/mdb-free.scss",
