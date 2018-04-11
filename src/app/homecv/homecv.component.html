@@ -3,7 +3,20 @@
     <div class="row centered">
       <div class="col-lg-12">
         <h1>Tomasz Stelągowski</h1>
-        <h3>Full-stack developer | tomasz.stelagowski@gmail.com</h3>
+        <div class="row">
+          <div class="col row align-items-center">
+            <h3 class="col text-right">Software engineer</h3>
+          </div>
+          <div class="col border-left border-white">
+            <div class="row">
+              <div class="col-12 text-left"><h3><i class="pr-2 fa fa-at"></i> tomasz.stelagowski@gmail.com</h3></div>
+              <div class="col-12 text-left"><h3><i class="pr-2 fa fa-phone"></i> 662 769 803</h3></div>
+              <div class="col-12 text-left"><h3><i class="pr-2 fa fa-linkedin"></i><a target="_blank" href="http://www.linkedin.com/in/tomasz-stelagowski">tomasz-stelagowski</a></h3></div>
+              <div class="col-12 text-left"><h3><i class="pr-2 fa fa-github"></i> github</h3></div>
+            </div>
+          </div>
+        </div>
+        <!-- <h3>Software engineer | tomasz.stelagowski@gmail.com</h3> -->
       </div><!--/.col-lg-12 -->
     </div><!--/.row -->
   </div><!--/.container -->
@@ -15,17 +28,105 @@
   </cv-section-item>
 </cv-section>
 <cv-section [sectionname]="'EMPLOYMENT'">
-  <ng-container *ngFor="let emp of employment">
     <cv-section-item>
-      <p desc> 
-        <strong>{{ emp["companyName"] }}</strong> <br />
-        <i>Technologies: </i> {{ emp["techs"].join(", ") }} <br />
-          <span class="li" *ngFor="let point of (emp['desc'])"> {{ point }} </span><br />
-      </p>
+      <ng-container desc>
+        <cv-title>Eracent Sp. z o.o.</cv-title> <br />
+        Software developer <br />
+        <p class="pt-2">
+          <i>Technologies: </i> Angular 5, BackboneJS, Bootstrap 4, Angular Material, .NET MVC, Python  <br />
+        </p>
+        <ul>
+          <li> Architectured and designed front-end, for visual web editor for SQL queries, using Angular 5, NgRedux, Bootstrap4, Angular Material</li>
+          <li>Designed, highly modular Allocation Engine, for automatic software to license allocation problem.</li>
+          <li>Designed BackboneJS based architecture for Front-End Part of new application and implemented it.</li>
+          <li>Rewritten whole application from .NET MVC to Angular 5.</li>
+        </ul>
+      </ng-container>
       <p info>
-        {{emp["start"] }} - {{ emp["end"]}}
+        <cv-data [startDate]="'May 2017'" [endDate]="'now'"></cv-data>
       </p>
-       
+
     </cv-section-item>
-  </ng-container>
+
+    <cv-section-item>
+      <ng-container desc>
+        <cv-title>Accenture</cv-title> <br />
+        Front-End Developer <br />
+        <p class="pt-2">
+          <i>Technologies: </i> BackboneJS  <br />
+        </p>
+        <ul>
+          <li> Designed pageable infinite scroll component. </li>
+          <li> Implemented several views and components for CRM application product. </li>
+          <li>Ported Web Application to tablets using Android studio. </li>
+        </ul>
+      </ng-container>
+      <p info>
+        <cv-data [startDate]="'May 2016'" [endDate]="'February 2017'"></cv-data>
+      </p>
+
+    </cv-section-item>
+</cv-section>
+
+<cv-section [sectionname]="'EDUCATION'">
+    <cv-section-item>
+      <ng-container desc>
+        <cv-title>Computer Science</cv-title> <br />
+        <span>UNIVERSITY OF WARSAW</span>
+        <p class="pt-2">
+          <i>Pursuing Bachelor`s degree, 3-year course.</i>
+        </p>
+      </ng-container>
+      <p info>
+        <cv-data [startDate]="'Fall 2015'" [endDate]="'now'"></cv-data> <br />
+        <tt>Graduating in Spring 2018</tt>
+      </p>
+
+    </cv-section-item>
+
+    <cv-section-item>
+      <ng-container desc>
+        <cv-title>Psychology</cv-title> <br />
+        <span>UNIVERSITY OF WARSAW</span>
+        <p class="pt-2">
+          <i>Pursuing Master`s degree, 5-year course. </i><br />
+          <i>Major in "Coaching and Personal Development" and "Industrial-Organizational Psychology".</i>
+        </p>
+      </ng-container>
+      <p info>
+        <cv-data [startDate]="'Fall 2013'" [endDate]="'now'"></cv-data> <br />
+        <tt>Graduating in Spring 2018</tt>
+      </p>
+
+    </cv-section-item>
+</cv-section>
+
+<cv-section [sectionname]="'AWARDS & CONTESTS'">
+    <cv-section-item>
+      <ng-container desc>
+        <cv-title>Olimpiad in Informatics</cv-title> <br />
+        <span>for College Students - OIG</span>
+        <p class="pt-2">
+          <i>4th place laureate achieved</i>
+        </p>
+      </ng-container>
+      <p info>
+        2008, III OIG
+      </p>
+
+    </cv-section-item>
+
+    <cv-section-item>
+      <ng-container desc>
+        <cv-title>Hackaton</cv-title> <br />
+        <span>UNIVERSITY OF WARSAW HUB</span>
+        <p class="pt-2">
+          <i>Participated</i>
+        </p>
+      </ng-container>
+      <p info>
+        Winter 2018
+      </p>
+
+    </cv-section-item>
 </cv-section>

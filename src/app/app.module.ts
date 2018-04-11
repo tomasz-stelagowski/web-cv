@@ -9,6 +9,8 @@ import { SectionComponent } from './section/section.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomecvComponent } from './homecv/homecv.component';
 import { SectionItemComponent } from './section-item/section-item.component';
+import { DataComponent } from './data/data.component';
+import { TitleComponent } from './title/title.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { SectionItemComponent } from './section-item/section-item.component';
     SectionComponent,
     NavbarComponent,
     HomecvComponent,
-    SectionItemComponent
+    SectionItemComponent,
+    DataComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule,

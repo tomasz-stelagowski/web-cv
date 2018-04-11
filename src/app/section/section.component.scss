@@ -1,7 +1,7 @@
 #cvsection {
   ::ng-deep{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -18,7 +18,12 @@
 
 :host-context(.theme-dark) ::ng-deep #cvsection {
 	background: #2c3e50;
-	color: white;
+  color: white;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 :host-context(.theme-dark) ::ng-deep #cvsection h5, p {

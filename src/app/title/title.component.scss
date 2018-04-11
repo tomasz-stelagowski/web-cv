@@ -1,0 +1,6 @@
+strong {
+  color:#34495e;
+}
+:host-context(.theme-dark) strong {
+  color: white;
+}
