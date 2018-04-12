@@ -8,7 +8,7 @@ import { Component, AfterContentInit, Input, ContentChildren } from '@angular/co
 export class SectionComponent {
 
   @Input() sectionname = '';
+  @Input() sectionId = '';
 
   constructor() { }
-
 }

@@ -11,6 +11,7 @@ import { HomecvComponent } from './homecv/homecv.component';
 import { SectionItemComponent } from './section-item/section-item.component';
 import { DataComponent } from './data/data.component';
 import { TitleComponent } from './title/title.component';
+import { InconstructionComponent } from './inconstruction/inconstruction.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TitleComponent } from './title/title.component';
     HomecvComponent,
     SectionItemComponent,
     DataComponent,
-    TitleComponent
+    TitleComponent,
+    InconstructionComponent
   ],
   imports: [
     BrowserModule,
